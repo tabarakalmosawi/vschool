@@ -1,0 +1,39 @@
+body {
+	background-color: #d3eef5
+}
+
+img {
+	background-size: cover;
+	margin-top: 15px
+}
+
+.input-group {
+	position: relative;
+	top: 50px;
+	margin-top: 10px;
+}
+.checkbox-container{
+    
+}
+
+.btn {
+    margin-top: 10px;
+}
+table {
+	margin-top: 80px;
+}
+
+th {
+	top: 350px;
+	background-color: #00BCD4;
+	color: white;
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background: #B2EBF2;
+}
+
+tbody tr:nth-child(even) {
+	background: #E0F7FA;
+}
