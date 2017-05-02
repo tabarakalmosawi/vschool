@@ -1,0 +1,7 @@
+1-Problem solvimg : 
+letter frequency -->  count letter frequency that result how many letter that repeat 
+var input 
+wrtie a function 
+we need for loop 
+we need if 
+2- sudo code : 

@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    color: white;
+    background-color: #8BC34A;
+    border-radius: 10px;
+
+
+}
+ul {
+    list-style-type: none;
+        text-align: center
+
+}
+#items {
+    border-radius: 10px;
+}
+
+.btn{
+    margin-right :10px;
+    margin-top: 5px;
+}
+
+.btn-danger{
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.btn-row{
+    text-align: center
+}

@@ -4,33 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <title>mario</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <body>
-
+    
     <div class="content">
         <div class="box-goomba box">
             <img src="http://vignette3.wikia.nocookie.net/nintendo/images/d/d5/GoombaNSMB.png/revision/latest?cb=20110724131649&path-prefix=en" id="goomba" alt="">
-            <input id="goomba-price" type="number" placeholder="price">
             <input id="goomba-amount" type="number" placeholder="amount">
+            <input id="goomba-total" type="number" placeholder="total">
         </div>
         <div class="box-cheep box">
             <img src="http://vignette1.wikia.nocookie.net/fantendo/images/2/29/Gold_cheep_cheep.png/revision/latest?cb=20120817223710" id="cheep" alt="">
-            <input id="cheep-price" type="number" placeholder="price">
             <input id="cheep-amount" type="number" placeholder="amount">
+            <input id="cheep-total" type="number" placeholder="total">
+
+
         </div>
         <div class="box-bobomba box">
             <img src=http://vignette3.wikia.nocookie.net/nintendo/images/8/86/Bob-omb_%28MKWii%29.png/revision/latest?cb=20120819225302&path-prefix=en id="bobomba" alt="">
-            <input id="bobomba-price" type="number" placeholder="price">
             <input id="bobomba-amount" type="number" placeholder="amount">
+            <input id="bobomba-total" type="number" placeholder="total">
+
+
         </div>
 
     </div>
     <div class="total-box">
-       <input id="total" type='number'placeholder='total'>
+        <input id="total" type='number' placeholder='total'>
         <button id="total-button">click</button>
+        <button id="night"> night </button>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 
 </body>

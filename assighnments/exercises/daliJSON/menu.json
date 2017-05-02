@@ -1,0 +1,23 @@
+{
+    "appetizers": [
+        {
+            "name": "Tabola",
+            "cost": 6000,
+            "isTasty": true,
+            "ingredients": ["tomatoes", " lemon juice", "fresh mint", "onion", "olive oil"]
+    },
+        {
+            "name": "Hummus",
+            "cost": 3000,
+            "isTasty": true,
+}
+    ],
+ "hot sandwiches": [
+     {"name" :"",
+      "cost":
+      
+     }
+ ]
+   
+
+}

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding 0;
-    background: url('https://images4.alphacoders.com/361/thumb-1920-36194.jpg');
+    background-image: url('https://images4.alphacoders.com/361/thumb-1920-36194.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -27,7 +27,7 @@ body {
     width: 15%;
     margin: auto;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 80px;
     border-top-right-radius: 30%;
     border-top-left-radius: 30%;
     padding-top: 50px;
@@ -51,13 +51,16 @@ body {
     text-align: center;
     margin-bottom: 100px;
     margin-top: 30px;
-    
 }
-#box-1{
+
+#box-1 {
+    font-family: serif;
     padding: 5px 50px;
     background: blue;
-    color:aqua
+    color: aqua
 }
-#total-button{
-    font-family: 'Orbitron', sans-serif;
+
+.viewImg{
+    background-color: black ;
+    background-image: none;
 }

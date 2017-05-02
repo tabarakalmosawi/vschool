@@ -1,0 +1,22 @@
+[
+    {
+    "name" : "Tabarak" , 
+    "age" : 20 , 
+    "isAlive" : true , 
+    "hobbies" : ["shopping" , "reading"],
+   "addres" : {
+        "city" : "beirut" ,
+        "bld" : "alnasem"
+    }
+} ,
+    {
+    "name" : "Mohammed" , 
+    "age" : 25 , 
+    "isAlive" : true , 
+    "hobbies" : ["programming" , "reading"],
+   "addres" : {
+        "city" : "beirut" ,
+        "bld" : "alnasem"
+    }
+}
+]

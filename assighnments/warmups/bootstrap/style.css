@@ -1,39 +1,63 @@
-body{
+body {
     background-color: #18bc9c
 }
-.active{
+
+.active {
     margin-right: 300px;
 }
 
 #myNavbar {
     background: #2c3e50;
 }
+
 .navbar-inverse {
-     background: #2c3e50;
-
-}
-.box{
-       background: #2c3e50;
-  
+    background: #2c3e50;
 }
 
-img{
+.box {
+    background: #2c3e50;
+}
+
+img {
     padding: 30px;
     border-image: 50px;
-    
+    transition: all 0.5s ease-in-out;
+    animation: bootstrap infinite 2s ease-in
 }
 
-p{
+img:hover {
+    width: 400px;
+    height: 400px;
+    transition: all 0.5s ease-in-out;
+    transform: rotate(360deg)
+}
+
+p {
     text-align: center;
     font-size: 40px;
     color: white;
-    
 }
-.words{
-        font-size: 20px;
 
+.words {
+    font-size: 20px;
 }
-i{
-    font-size: 50px !important;
+
+i {
+    font-size: 60px !important;
+    color: white;
+    animation: bootstrap infinite 2s ease-in
+}
+
+.line {
+    font-size: 30px !important;
     color: white
+}
+
+@keyframes bootstrap {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(359deg)
+    }
 }
