@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="mainCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" ng-repeat="x in people">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-2">
+                        <p  class="lead" >First Name : {{x.firstname}}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p  class="lead">Last Name: {{x.lastname}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-2">
+                        <p class="lead" > Email: {{x.email}}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p  class="lead" > Place Of Birth: {{x.placeOfBirth}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-2">
+                        <p  class="lead" >Phone: {{x.phone}}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p  class="lead" > Favorite Food: {{x.favoriteFood}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p  class="lead" >Tell us about yourself : {{x.text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3">
+                <label>first name<input class="form-control" ng-model="firstname"></label>
+            </div>
+            <div class="col-md-3">
+                <label>last name <input class="form-control" ng-model="lastname"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3">
+                <label>email<input class="form-control" ng-model="email"></label>
+
+            </div>
+            <div class="col-md-3">
+                <label>place of birth<input class="form-control" ng-model="placeOfBirth"></label>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3">
+                <label>phone<input class="form-control" ng-model="phone"></label>
+
+            </div>
+            <div class="col-md-3 ">
+                <label>favorite food<input class="form-control" ng-model="favoriteFood"></label>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <label>tell us about yourself
+                <textarea class="form-control custom-control" rows="3" ng-model="text">
+                    {{text}}
+                </textarea ></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3">
+                <button class="btn btn-danger" ng-click="info()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

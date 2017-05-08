@@ -1,0 +1,17 @@
+input{
+    margin-bottom: 30px;
+    
+}
+
+button{
+ position: relative;
+    top: 10px;
+}
+textarea{
+    height: 100px;
+    width: 300px;
+}
+
+.lead{
+    margin-left: 100px !important;
+}
