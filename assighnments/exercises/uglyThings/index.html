@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="mainCtrl">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <input class="form-control" ng-model="img">
+            </div>
+            <div class="col-md-4">
+                <input ng-model="title">
+            </div>
+            <div class="col-md-4">
+                <input ng-model="Description">
+            </div>
+        </div>
+    <button ng-click="btn()">Submit</button>
+    <div ng-repeat="thing in arr">
+        <p>
+            <img ng-src={{thing.img}}>
+        </p>
+        <p>
+            {{thing.title}}
+        </p>
+        <p>
+            {{thing.Description}}
+        </p>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js">
+
+
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
