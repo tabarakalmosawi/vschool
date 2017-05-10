@@ -1,0 +1,22 @@
+body{
+    background-color: #9E9E9E;
+}
+h1 {
+    background-color: #BDBDBD;
+    color: firebrick;
+}
+.godfather{
+    height: 70px;
+    width: 100px;
+}
+
+.images {
+    height: 200px;
+    width: 200px;
+}
+.names{
+    background-color: #607D8B;
+    height: 20px;
+    width: 200px;
+    margin-left: 104px;
+}
