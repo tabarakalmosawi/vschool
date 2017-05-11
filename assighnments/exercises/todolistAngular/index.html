@@ -23,7 +23,7 @@
             <div class="col-md-4">
                 <label>Image</label><input class="form-control" ng-model="imgUrl">
             </div>
-            <label>completed</label><input type=checkbox>
+
         </div>
         <div class="row">
             <div class="col-md-4 col-md-offset-2">
@@ -35,24 +35,26 @@
         </div>
         <div class="row text-center">
             <div class="col-md-12">
-                <button class="btn btn-primary" ng-click="btn()">Submit</button>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-12">
-                <a class="btn btn-danger" ng-click="remove()">Delete</a>
+                <label>completed</label><input type=checkbox ng-model="checkBox">
+                <div class="line" ng-class="line"></div>
             </div>
         </div>
 
+        <div class="row text-center">
+            <div class="col-md-12">
+                <button class="btn btn-primary" ng-click="btn()">Submit</button>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12">
-                <div ng-repeat="item in arr">
-                    <p> id: {{item._id}}</p>
-                    <p>Title: {{item.title}}</p>
-                    <p>Price: {{item.price}}</p>
-                    <p>Description: {{item.description}}</p>
-                    
+                <div class="information" ng-repeat="item in arr">
+                    <p class="lead">Title: {{item.title}}</p>
                     <img ng-src="{{item.imgUrl}}">
+                    <p class="lead">Price: {{item.price}}</p>
+                    <p class="lead">Description: {{item.description}}</p>
+                    <p>{{item.checkBox}}</p>
+                    <a class="btn btn-danger" ng-click="remove(item)">Delete</a>
+
                 </div>
             </div>
         </div>
