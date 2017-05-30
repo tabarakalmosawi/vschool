@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="list">
+
+        <div class="row text-center">
+
+            <div class="col-md-12">
+
+                <p class="topActor">FEATURED ACTORS</p>
+                <div ng-repeat="x in list | filter:search">
+                    <div class="col-md-4">
+                        <div class="imgNameMovie">
+                            <img class="imgActor" ng-src={{x.i[0]}}>
+                            <div>{{x.l}}</div>
+                            <div>{{x.s}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

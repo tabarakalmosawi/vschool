@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="list">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="actor">Actors</p>
+                <ol>
+                    <div ng-repeat="x in list | orderBy:'l' | filter:search">
+                        <div class="col-md-12">
+                            <li>
+                                <div class="name">{{x.l}}</div>
+                                <div class="movie">{{x.s}}</div>
+                            </li>
+                </ol>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
