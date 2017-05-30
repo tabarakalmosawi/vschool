@@ -1,8 +1,8 @@
-h1{
-    border: #0D47A1 solid 2px;
+/*h1{
     text-align: center;
-border-radius: 8px;
-}
+    border-radius: 8px;
+    margin-top: 50px;
+}*/
 
 img{
     width: 200px;
@@ -11,3 +11,7 @@ img{
 .line{
     text-decoration: line-through;
 }
+#addingInfo{
+    margin-bottom: 100px !important;
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app = "MyApp">
+<head>
+    <meta charset="UTF-8">
+    <title>ng</title>
+</head>
+<body ng-controller = "mainApp">
+ <input ng-model="search.name">
+ <input ng-model="search.age">
+ <input ng-model="search.jop">
+  <table>
+      <tr>
+          <th>name</th>
+          <th>age</th>
+          <th>job</th>
+      </tr>
+      <tr ng-repeat="person in people |filter:search">
+        <td>{{person.name}}</td>
+        <td>{{person.age}}</td>
+        <td>{{person.job}}</td>
+
+      </tr>
+  </table>
+   
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

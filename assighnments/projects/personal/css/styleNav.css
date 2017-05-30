@@ -1,0 +1,69 @@
+* {
+	box-sizing: border-box
+}
+.navbarimg{
+	height: 150px;
+	width: 100% !important;
+	margin-top: 2px !important;
+}
+body {
+    width:100%;
+    height:100%;
+    font-family:Arial;
+    font-size:14px;
+	background-image: url("http://www.designbolts.com/wp-content/uploads/2012/12/Skeletal-Weave-White-Tileable-pattern-for-website-background.jpg")
+}
+header, footer {
+    min-height:50px;
+    position:relative;
+}
+[role="contents"] {
+    position:relative;
+}
+.mega-nav {
+    background:#282828
+;
+    border-radius:0;
+    margin-bottom:0;
+}
+.mega-nav.navbar-default .navbar-nav > li > a {
+    color:#fff;
+    transition: all 200ms ease-out;
+    -webkit-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+}
+.mega-nav.navbar-default .navbar-nav > li > a:hover {
+    background:#bc7d1c
+
+} 
+.mega-nav.navbar-default .navbar-nav > li.dropdown > a:hover,
+.mega-nav.navbar-default .navbar-nav > li.dropdown > a:focus,
+.mega-nav.navbar-default .navbar-nav > li.dropdown > a:active{
+    background:#bc7d1c;
+    color:#fff;
+} 
+#MainMenu {
+    padding-left:0;
+}
+#MainMenu .menu-list li {
+    transition: all 200ms ease-out;
+    -webkit-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+}
+#MainMenu .menu-list li + li {
+    border-left:1px solid rgba(255, 255, 255, 0.5);
+}
+
+.mega-nav.navbar-default .navbar-nav > li.menu-list .list-category a {
+    color:#333;
+}
+.darkness {
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}

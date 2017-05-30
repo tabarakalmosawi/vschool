@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body ng-app="myApp" ng-controller="mainCtrl">
+    <ng-view></ng-view>
+   <h1>{{title}}</h1> 
+    <ul>
+        <a href="#/">home</a>
+        <a href="#/about">about</a>
+        <a href="#/contact">contact Us</a>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="https://code.angularjs.org/1.6.4/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

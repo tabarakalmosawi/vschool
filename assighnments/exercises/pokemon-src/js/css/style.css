@@ -1,0 +1,41 @@
+th{
+    text-align: center
+}
+td{
+    text-align: center
+}
+img{
+    width: 400px;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+   margin-top: 15px;
+}
+th{
+    
+    background-color: #1E88E5 !important;
+    color: white
+}
+button{
+    margin-top: 5px;
+    background-color: #1E88E5;
+}
+button:hover {
+    background-color: #90CAF9;
+    transition: all 0.5s ease-in-out;
+
+}
+td {
+    background-color: #90CAF9;
+    color: white
+}
+
+td:hover {
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}

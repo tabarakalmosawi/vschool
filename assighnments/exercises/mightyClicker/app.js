@@ -1,31 +1,43 @@
 var app = angular.module("myApp", []);
-var count =10;
 app.service("blueService", function () {
-    this.increment = function () {
-        return count ++
+    this.increment = function (countBlue) {
+
+        return countBlue + 1
     }
-    this.decrement = function(){
-        return count --
+    this.decrement = function (countBlue) {
+        return countBlue - 1
+    }
+    this.reset = function (re) {
+       return re =10
     }
 })
 app.service("redService", function () {
-      this.increment = function () {
-        return count --
+    this.increment = function (countred) {
+        return countred + 1
     }
-    this.decrement = function(){
-        return count ++
+    this.decrement = function (countred) {
+        return countred - 1
     }
-
+    this.reset = function (re) {
+        return re = 10
+    }
 })
-app.controller("mainCtrl", function ($scope, "blueService", "redService") {
-    $scope.test ="working";
+app.controller("mainCtrl", function ($scope, blueService, redService) {
+    $scope.numRed = 10;
+    $scope.numBlue = 10;
     $scope.red = function () {
-        console.log(redService.increment())
-        console.log(blueService.decrement())
-        
+        $scope.numRed = redService.increment($scope.numRed)
+        $scope.numBlue = blueService.decrement($scope.numBlue)
+        if ($scope.numBlue < 0) {
+            $scope.numBlue = blueService.reset($scope.numBlue)
+        }
     }
     $scope.blue = function () {
-        redService.decrement()
-        blueService.increment()
+        $scope.numRed = redService.decrement($scope.numRed)
+        $scope.numBlue = blueService.increment($scope.numBlue)
+        if ($scope.numRed <0){
+            $scope.numRed = redService.reset($scope.numRed)
+        }
+        
     }
 })

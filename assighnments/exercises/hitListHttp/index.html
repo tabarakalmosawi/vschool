@@ -12,18 +12,22 @@
     <div class="container-fluid">
         <div class="row">
             <h1 class="title"><img class="godfather" src="hqdefault.jpg"> Don Corlean's HitList</h1>
-            <div class="col-md-12"></div>
         </div>
         <div class="row text-center">
             <div class="col-md-12">
                 <div ng-repeat="info in hitList"> 
                     <div class="col-md-4" >
                       <img class="images" ng-src={{info.image}}> 
-                       <p class="names">{{info.name}}</p>
+                       <p class="names">{{info.title}}</p>
+                                             <p>            {{info.links}}
+</p>
+                                              <p class="names">{{info.name}}</p>
+                                              <p class="names">{{info.publishers}}</p>
                    </div>
-                   
                    </div>
             </div>
+            {{hitList.publishers}}
+            {{link.links}}
         </div>
 
     </div>

@@ -1,0 +1,39 @@
+.img {
+	width: 450px;
+	height: 130px;
+	position: relative;
+	left: 80px;
+	top: 20px;
+}
+
+.image1 {
+	margin-bottom: 100px width: 300px;
+	height: 250px;
+	top: 60px;
+	position: relative;
+}
+
+.image2 {
+	width: 300px;
+	height: 250px;
+	top: 60px;
+	position: relative;
+}
+
+btn {
+	position: relative;
+	right: 320px;
+}
+
+
+
+
+
+button {
+	position: relative;
+	top: 70px;
+}
+p {
+	position: relative;
+	top: 75px;
+}
